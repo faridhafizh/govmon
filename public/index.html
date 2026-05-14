@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GovMon - Indonesia Government Project & Corruption Monitor</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="logo-container">
+                <img src="logo.svg" alt="GovMon Logo" id="logo">
+                <h1>GovMon</h1>
+            </div>
+            <p>Real-time monitor for government projects, corruption news, and anomalies in Indonesia.</p>
+        </header>
+
+        <main>
+            <div id="map-container">
+                <div id="map"></div>
+            </div>
+
+            <div id="sidebar">
+                <h2>Latest Reports</h2>
+                <div id="news-list">
+                    <p class="loading">Fetching latest reports...</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 GovMon. Open Source Project.</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
